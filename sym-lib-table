@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Microprocessors")(type "KiCad")(uri "${KIPRJMOD}/Microprocessors.kicad_sym")(options "")(descr ""))
+)
