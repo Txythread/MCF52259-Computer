@@ -3225,6 +3225,26 @@
 		)
 		(uuid "1236ae9c-8cb2-4c9d-b18f-6e48812e39e6")
 	)
+	(text "(crystal/oscillator) crystal"
+		(exclude_from_sim no)
+		(at 104.648 18.034 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "766d134e-92b3-4d94-8a0a-98f9d63ff6e6")
+	)
+	(text "PLL, allow clock multiplication"
+		(exclude_from_sim no)
+		(at 106.68 15.494 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8839b7ee-86bc-41ec-a9d5-5cf7059717df")
+	)
 	(junction
 		(at 187.96 22.86)
 		(diameter 0)
@@ -4333,28 +4353,6 @@
 			)
 		)
 	)
-	(global_label "CLKMOD0"
-		(shape input)
-		(at 83.82 17.78 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "6e7ad4d4-6a8e-4199-a381-ae9c39a2d9dc")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 95.6347 17.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "FB_D3"
 		(shape input)
 		(at 48.26 129.54 180)
@@ -5279,7 +5277,7 @@
 			)
 		)
 	)
-	(global_label "FB_A17"
+	(global_label "FB_A16"
 		(shape input)
 		(at 83.82 43.18 0)
 		(fields_autoplaced yes)
@@ -5455,28 +5453,6 @@
 			)
 		)
 	)
-	(global_label "CLKMOD1"
-		(shape input)
-		(at 83.82 15.24 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d32f96f4-b144-4812-bc34-3da0e40cab8f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 95.6347 15.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "ICOC0"
 		(shape input)
 		(at 83.82 144.78 0)
@@ -5499,7 +5475,7 @@
 			)
 		)
 	)
-	(global_label "FEC_TXD2"
+	(global_label "FEC_TXD0"
 		(shape input)
 		(at 83.82 93.98 0)
 		(fields_autoplaced yes)
@@ -5622,28 +5598,6 @@
 		(uuid "e635fc90-0cad-414a-8efc-e9017ec2c254")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 37.5339 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GND"
-		(shape input)
-		(at 180.34 22.86 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e90c9bff-4e1b-4735-a01b-d2c4ac940cd8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 173.4843 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6269,6 +6223,73 @@
 			(project "MCF52259-Computer"
 				(path "/c15ade3d-bb7e-4014-8f2f-451af952ec03"
 					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 83.82 15.24 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "22ef9454-f0a9-4110-8941-75f833fb0f9d")
+		(property "Reference" "#PWR022"
+			(at 80.01 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDD"
+			(at 87.63 15.2399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 83.82 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "74e7c7e0-5df7-4aed-b37e-a6197d05f2d9")
+		)
+		(instances
+			(project "MCF52259-Computer"
+				(path "/c15ade3d-bb7e-4014-8f2f-451af952ec03"
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -7305,6 +7326,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VSS")
+		(at 180.34 22.86 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8d252f85-07af-4127-9c86-c371e0df0edc")
+		(property "Reference" "#PWR021"
+			(at 184.15 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VSS"
+			(at 176.53 22.8599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 180.34 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VSS\""
+			(at 180.34 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ac225bb5-aa87-4203-9bf0-eefebec18007")
+		)
+		(instances
+			(project "MCF52259-Computer"
+				(path "/c15ade3d-bb7e-4014-8f2f-451af952ec03"
+					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VDD")
 		(at 48.26 162.56 90)
 		(unit 1)
@@ -7569,6 +7657,73 @@
 			(project "MCF52259-Computer"
 				(path "/c15ade3d-bb7e-4014-8f2f-451af952ec03"
 					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 83.82 17.78 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ab7d9845-e8de-4ce5-91e6-2d1fb7f928d8")
+		(property "Reference" "#PWR023"
+			(at 80.01 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDD"
+			(at 87.63 17.7799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 83.82 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "277ed97e-4afa-4255-a54c-5ee8928648a3")
+		)
+		(instances
+			(project "MCF52259-Computer"
+				(path "/c15ade3d-bb7e-4014-8f2f-451af952ec03"
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
