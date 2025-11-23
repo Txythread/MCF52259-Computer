@@ -4549,6 +4549,12 @@
 		(uuid "0925d97b-e790-4dd9-a575-1b45fc433bac")
 	)
 	(junction
+		(at 325.12 229.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3de6efc5-e450-442c-a52c-e79e2eb91a60")
+	)
+	(junction
 		(at 187.96 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4632,16 +4638,6 @@
 	)
 	(wire
 		(pts
-			(xy 322.58 229.87) (xy 351.79 229.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "817cf0d4-019a-431d-957a-c4f0ce15f018")
-	)
-	(wire
-		(pts
 			(xy 325.12 168.91) (xy 325.12 165.1)
 		)
 		(stroke
@@ -4649,6 +4645,16 @@
 			(type default)
 		)
 		(uuid "853ef785-6746-4401-88f5-cc9a65f3fa0b")
+	)
+	(wire
+		(pts
+			(xy 322.58 229.87) (xy 325.12 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8745e597-8b9b-4a34-98f4-4cde56cf6c37")
 	)
 	(wire
 		(pts
@@ -4682,6 +4688,26 @@
 	)
 	(wire
 		(pts
+			(xy 325.12 218.44) (xy 325.12 214.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b58bbdd9-3fab-4e7d-81c0-b3f23fd0e65c")
+	)
+	(wire
+		(pts
+			(xy 325.12 229.87) (xy 351.79 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b894da0c-ec13-43e6-8b3a-dd349fd223a7")
+	)
+	(wire
+		(pts
 			(xy 325.12 180.34) (xy 351.79 180.34)
 		)
 		(stroke
@@ -4699,6 +4725,16 @@
 			(type default)
 		)
 		(uuid "c6522b74-cecd-4eb0-afea-f2b216526ade")
+	)
+	(wire
+		(pts
+			(xy 325.12 226.06) (xy 325.12 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbb86a2d-1906-4db2-a297-3dd42ce19f1e")
 	)
 	(wire
 		(pts
@@ -12743,6 +12779,72 @@
 	)
 	(symbol
 		(lib_id "power:VDD")
+		(at 325.12 214.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e5166b11-0b42-477c-b561-7f680f1e0e54")
+		(property "Reference" "#PWR053"
+			(at 325.12 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDD"
+			(at 325.12 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 325.12 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 325.12 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 325.12 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "55eb25ee-7496-4dbe-818e-a767fab4f64f")
+		)
+		(instances
+			(project "MCF52259-Computer"
+				(path "/c15ade3d-bb7e-4014-8f2f-451af952ec03"
+					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
 		(at 83.82 88.9 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13208,6 +13310,76 @@
 			(project "MCF52259-Computer"
 				(path "/c15ade3d-bb7e-4014-8f2f-451af952ec03"
 					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 325.12 222.25 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f285022c-eaaf-4d9e-9923-05b29e182d4c")
+		(property "Reference" "R2"
+			(at 327.66 220.9799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "22kΩ"
+			(at 327.66 223.5199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 326.898 222.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 325.12 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 325.12 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "90494ba4-5fbd-495f-895a-27153c616d07")
+		)
+		(pin "1"
+			(uuid "b560fca1-30a1-4b81-ae0a-0a6ebe629f3d")
+		)
+		(instances
+			(project "MCF52259-Computer"
+				(path "/c15ade3d-bb7e-4014-8f2f-451af952ec03"
+					(reference "R2")
 					(unit 1)
 				)
 			)
