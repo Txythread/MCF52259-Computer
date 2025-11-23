@@ -5,6 +5,463 @@
 	(uuid "c15ade3d-bb7e-4014-8f2f-451af952ec03")
 	(paper "A3")
 	(lib_symbols
+		(symbol "Connector:Micro_SD_Card"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at -16.51 15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Micro_SD_Card"
+				(at 16.51 15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Footprint" ""
+				(at 29.21 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.we-online.com/components/products/datasheet/693072010801.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Micro SD Card Socket"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector SD microsd"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "microSD*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Micro_SD_Card_0_1"
+				(polyline
+					(pts
+						(xy -8.89 -11.43) (xy -8.89 8.89) (xy -1.27 8.89) (xy 2.54 12.7) (xy 3.81 12.7) (xy 3.81 11.43)
+						(xy 6.35 11.43) (xy 7.62 12.7) (xy 20.32 12.7) (xy 20.32 -11.43) (xy -8.89 -11.43)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -7.62 8.255)
+					(end -5.08 6.985)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -7.62 5.715)
+					(end -5.08 4.445)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -7.62 3.175)
+					(end -5.08 1.905)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -7.62 0.635)
+					(end -5.08 -0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -7.62 -1.905)
+					(end -5.08 -3.175)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -7.62 -4.445)
+					(end -5.08 -5.715)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -7.62 -6.985)
+					(end -5.08 -8.255)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -7.62 -9.525)
+					(end -5.08 -10.795)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 16.51 12.7) (xy 16.51 13.97) (xy -19.05 13.97) (xy -19.05 -16.51) (xy 16.51 -16.51) (xy 16.51 -11.43)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Micro_SD_Card_1_1"
+				(pin bidirectional line
+					(at -22.86 7.62 0)
+					(length 3.81)
+					(name "DAT2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 5.08 0)
+					(length 3.81)
+					(name "DAT3/CD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -22.86 2.54 0)
+					(length 3.81)
+					(name "CMD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -22.86 0 0)
+					(length 3.81)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -22.86 -2.54 0)
+					(length 3.81)
+					(name "CLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -22.86 -5.08 0)
+					(length 3.81)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 -7.62 0)
+					(length 3.81)
+					(name "DAT0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -22.86 -10.16 0)
+					(length 3.81)
+					(name "DAT1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 -15.24 180)
+					(length 3.81)
+					(name "SHIELD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Generic:Conn_02x10_Counter_Clockwise"
 			(pin_names
 				(offset 1.016)
@@ -4033,6 +4490,26 @@
 		)
 		(uuid "8839b7ee-86bc-41ec-a9d5-5cf7059717df")
 	)
+	(text "NC"
+		(exclude_from_sim no)
+		(at 310.896 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "945939f8-9610-4258-a3ba-328c27affd4a")
+	)
+	(text "Chip Select"
+		(exclude_from_sim no)
+		(at 314.452 95.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b01d5ec6-75b2-4e74-b975-56127df56a89")
+	)
 	(text "RESET"
 		(exclude_from_sim no)
 		(at 263.652 19.812 0)
@@ -4062,6 +4539,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c23a0050-cdac-4cdc-8292-5594630b451a")
+	)
+	(junction
+		(at 278.13 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c2571b2f-3e69-4f03-9008-473048b93922")
 	)
 	(no_connect
 		(at 83.82 20.32)
@@ -4109,6 +4592,16 @@
 	)
 	(wire
 		(pts
+			(xy 278.13 106.68) (xy 278.13 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a86f8b0-1f21-4e2c-89ba-6cc0f2b76fdd")
+	)
+	(wire
+		(pts
 			(xy 200.66 38.1) (xy 205.74 38.1)
 		)
 		(stroke
@@ -4116,6 +4609,16 @@
 			(type default)
 		)
 		(uuid "74d83032-40c7-403f-87aa-dc28aa24fd4a")
+	)
+	(wire
+		(pts
+			(xy 278.13 99.06) (xy 278.13 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "853ef785-6746-4401-88f5-cc9a65f3fa0b")
 	)
 	(wire
 		(pts
@@ -4146,6 +4649,16 @@
 			(type default)
 		)
 		(uuid "96defdfa-6740-4637-89e5-3dc32e27abf9")
+	)
+	(wire
+		(pts
+			(xy 278.13 110.49) (xy 304.8 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba69ec3d-30c8-49b5-9775-07debfe11178")
 	)
 	(wire
 		(pts
@@ -4186,6 +4699,16 @@
 			(type default)
 		)
 		(uuid "edd2541c-dc5e-448c-9a1a-02b3f534887b")
+	)
+	(wire
+		(pts
+			(xy 275.59 110.49) (xy 278.13 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fdb623f7-83b6-45a9-ae79-a706f8be41c4")
 	)
 	(global_label "AN7"
 		(shape input)
@@ -4913,6 +5436,28 @@
 			)
 		)
 	)
+	(global_label "QSPI_CS0"
+		(shape input)
+		(at 304.8 95.25 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "507906bd-bf26-4e5f-8c41-d8b91720d090")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 292.7434 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "FEC_RXD3"
 		(shape input)
 		(at 83.82 58.42 0)
@@ -4979,6 +5524,28 @@
 			)
 		)
 	)
+	(global_label "QSPI_MISO"
+		(shape input)
+		(at 304.8 107.95 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "591a28f0-15ab-405d-a9c5-1fae07e14134")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 291.8362 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "USB_D-"
 		(shape input)
 		(at 83.82 177.8 0)
@@ -5041,6 +5608,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "QSPI_CLK"
+		(shape input)
+		(at 304.8 102.87 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "63c02e3c-a173-4454-824e-0583ffed1ab8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 292.8643 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -5309,7 +5898,7 @@
 			)
 		)
 	)
-	(global_label "PCS0"
+	(global_label "QSPI_CS0"
 		(shape input)
 		(at 48.26 81.28 180)
 		(fields_autoplaced yes)
@@ -5321,7 +5910,7 @@
 		)
 		(uuid "7b15734b-e162-400b-8be4-6eab71b5997c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 40.3158 81.28 0)
+			(at 36.2034 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5485,7 +6074,7 @@
 			)
 		)
 	)
-	(global_label "QSDI"
+	(global_label "QSPI_MISO"
 		(shape input)
 		(at 48.26 73.66 180)
 		(fields_autoplaced yes)
@@ -5497,7 +6086,7 @@
 		)
 		(uuid "9014b70e-2fbd-4865-a5d2-24639e20b293")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 40.86 73.66 0)
+			(at 35.2962 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5793,7 +6382,7 @@
 			)
 		)
 	)
-	(global_label "QSD0"
+	(global_label "QSPI_MOSI"
 		(shape input)
 		(at 48.26 76.2 180)
 		(fields_autoplaced yes)
@@ -5805,7 +6394,7 @@
 		)
 		(uuid "a1092a66-f82a-4377-ab7c-767d10c2d016")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 40.2553 76.2 0)
+			(at 35.2962 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6145,6 +6734,28 @@
 			)
 		)
 	)
+	(global_label "QSPI_MOSI"
+		(shape input)
+		(at 304.8 97.79 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "be8de98d-2fe5-4a61-b155-7ecde3cace30")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 291.8362 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "ICOC1"
 		(shape input)
 		(at 83.82 142.24 0)
@@ -6273,6 +6884,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "{slash}IRQ5"
+		(shape input)
+		(at 275.59 110.49 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cff0b5e5-edb1-45a9-82e0-4c7e2b5a2101")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 266.8595 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -6409,7 +7042,7 @@
 			)
 		)
 	)
-	(global_label "SCK"
+	(global_label "QSPI_CLK"
 		(shape input)
 		(at 48.26 78.74 180)
 		(fields_autoplaced yes)
@@ -6421,7 +7054,7 @@
 		)
 		(uuid "e2379656-2af6-40fd-85d9-54709f9d3fa2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 41.5253 78.74 0)
+			(at 36.3243 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7009,6 +7642,73 @@
 	)
 	(symbol
 		(lib_id "power:VDD")
+		(at 304.8 100.33 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "11974c67-d6a9-4a15-bf3d-665541576511")
+		(property "Reference" "#PWR046"
+			(at 308.61 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDD"
+			(at 300.99 100.3299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 304.8 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 304.8 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 304.8 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1a32b6ef-eb96-4e8b-a646-98b62131c7ef")
+		)
+		(instances
+			(project "MCF52259-Computer"
+				(path "/c15ade3d-bb7e-4014-8f2f-451af952ec03"
+					(reference "#PWR046")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
 		(at 83.82 147.32 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7294,7 +7994,7 @@
 				)
 			)
 		)
-		(property "Value" "330Ω"
+		(property "Value" "22kΩ"
 			(at 262.89 34.29 90)
 			(effects
 				(font
@@ -8513,6 +9213,73 @@
 	)
 	(symbol
 		(lib_id "power:VSS")
+		(at 304.8 105.41 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "53148845-6855-49f9-ba68-0c7a01a620ac")
+		(property "Reference" "#PWR051"
+			(at 308.61 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VSS"
+			(at 300.99 105.4099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 304.8 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 304.8 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VSS\""
+			(at 304.8 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "78e67561-14a3-4551-9c16-3a0afbefcbb6")
+		)
+		(instances
+			(project "MCF52259-Computer"
+				(path "/c15ade3d-bb7e-4014-8f2f-451af952ec03"
+					(reference "#PWR051")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VSS")
 		(at 83.82 129.54 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9051,6 +9818,73 @@
 	)
 	(symbol
 		(lib_id "power:VSS")
+		(at 327.66 76.2 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6f2efff9-98e8-4350-8fbc-3910c0a156e8")
+		(property "Reference" "#PWR045"
+			(at 323.85 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VSS"
+			(at 331.47 76.1999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 327.66 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 327.66 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VSS\""
+			(at 327.66 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1cb99fdd-8f21-4f1f-a442-df3b666c6d57")
+		)
+		(instances
+			(project "MCF52259-Computer"
+				(path "/c15ade3d-bb7e-4014-8f2f-451af952ec03"
+					(reference "#PWR045")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VSS")
 		(at 119.38 100.33 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9251,6 +10085,72 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 304.8 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7ceb433e-d4ab-4e64-a133-7c37e87ba2db")
+		(property "Reference" "TP1"
+			(at 305.562 88.138 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SD0_D2"
+			(at 305.562 89.662 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 309.88 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 309.88 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 304.8 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "93a07210-eee3-4570-b16a-d261c285bad9")
+		)
+		(instances
+			(project ""
+				(path "/c15ade3d-bb7e-4014-8f2f-451af952ec03"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VSS")
 		(at 48.26 137.16 90)
 		(unit 1)
@@ -9312,6 +10212,73 @@
 			(project "MCF52259-Computer"
 				(path "/c15ade3d-bb7e-4014-8f2f-451af952ec03"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 322.58 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8a75b863-11a1-4604-ae63-a04a042b7280")
+		(property "Reference" "#PWR044"
+			(at 326.39 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDD"
+			(at 318.77 76.1999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 322.58 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 322.58 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 322.58 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cc8449e5-6b15-43e1-9bf5-a6ff9e6f14c6")
+		)
+		(instances
+			(project "MCF52259-Computer"
+				(path "/c15ade3d-bb7e-4014-8f2f-451af952ec03"
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -9720,6 +10687,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VDD")
+		(at 278.13 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "96df7a4a-5103-4e77-9153-4ce239164f54")
+		(property "Reference" "#PWR052"
+			(at 278.13 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDD"
+			(at 278.13 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 278.13 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 278.13 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 278.13 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6fc3a158-e4a8-4938-b763-ba6966751cee")
+		)
+		(instances
+			(project "MCF52259-Computer"
+				(path "/c15ade3d-bb7e-4014-8f2f-451af952ec03"
+					(reference "#PWR052")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VSS")
 		(at 377.19 27.94 90)
 		(unit 1)
@@ -9850,6 +10883,95 @@
 			(project "MCF52259-Computer"
 				(path "/c15ade3d-bb7e-4014-8f2f-451af952ec03"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Micro_SD_Card")
+		(at 327.66 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "99c30658-a0ca-457a-96c1-98f6f6c2ff3f")
+		(property "Reference" "J2"
+			(at 328.295 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Micro_SD_Card"
+			(at 328.295 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Card:microSD_HC_Wuerth_693072010801"
+			(at 356.87 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/693072010801.pdf"
+			(at 327.66 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Micro SD Card Socket"
+			(at 327.66 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "1a2a09bf-2071-49fc-a708-f59eefea0e2c")
+		)
+		(pin "6"
+			(uuid "b7869d4f-8dca-43ee-ba8c-e63336b87eb3")
+		)
+		(pin "3"
+			(uuid "4669af3f-f4d5-4a15-bd37-8a586045ae02")
+		)
+		(pin "2"
+			(uuid "13a9b72e-e79f-444c-802a-eb732b6c952a")
+		)
+		(pin "5"
+			(uuid "72ce4e0c-b079-4094-a979-d4517f592c90")
+		)
+		(pin "7"
+			(uuid "bae8ae37-9cf6-4246-8d8a-e46363f6cb7a")
+		)
+		(pin "8"
+			(uuid "6b5d59e5-4933-45fc-a549-6ba6febc2fd2")
+		)
+		(pin "9"
+			(uuid "2a41ae19-f5a2-4874-9c1b-2342c06847e8")
+		)
+		(pin "1"
+			(uuid "9340609b-30ac-4620-a5ea-1d5a3ed3d87d")
+		)
+		(instances
+			(project ""
+				(path "/c15ade3d-bb7e-4014-8f2f-451af952ec03"
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -10584,6 +11706,74 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
+		(at 325.12 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c02e4483-e42b-4ee0-84a7-307b7583ba9b")
+		(property "Reference" "C14"
+			(at 325.1263 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0.1µF"
+			(at 325.1263 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 325.12 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 325.12 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 325.12 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "829293df-681c-4b4a-b086-79a3526d0753")
+		)
+		(pin "1"
+			(uuid "bb993421-3b1e-465f-92bb-3792e7dad3c9")
+		)
+		(instances
+			(project "MCF52259-Computer"
+				(path "/c15ade3d-bb7e-4014-8f2f-451af952ec03"
+					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
 		(at 116.84 111.76 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11249,6 +12439,76 @@
 			(project "MCF52259-Computer"
 				(path "/c15ade3d-bb7e-4014-8f2f-451af952ec03"
 					(reference "#PWR043")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 278.13 102.87 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ea350d71-2b07-47ef-ac12-ad91183bd592")
+		(property "Reference" "R5"
+			(at 280.67 101.5999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "22kΩ"
+			(at 280.67 104.1399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 279.908 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 278.13 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 278.13 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8cc45192-4a76-4a38-a166-47b1cfa175cf")
+		)
+		(pin "1"
+			(uuid "66bc240a-74ac-4478-89a2-b1f2ccc2615c")
+		)
+		(instances
+			(project "MCF52259-Computer"
+				(path "/c15ade3d-bb7e-4014-8f2f-451af952ec03"
+					(reference "R5")
 					(unit 1)
 				)
 			)

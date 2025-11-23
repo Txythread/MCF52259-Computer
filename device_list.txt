@@ -1,0 +1,8 @@
+This contains the list of the devices connected to the MCF52259. 
+
+
+
+QSPI:
+	CS0:
+		(Micro) SD0
+		- Potentially Triggers IRQ5
